@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logoandham">
+            <img src="images/logo.png" class="logo" width="240" height="auto" alt="Harris and Associates Insurance Logo" href="index.html">
+            <img src="images/hamburger.png" alt="hamburger" width="46" height="38" class="navhamburger">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getaquote.html" class="navCTA">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="contacthero">
+        <h1>Contact Us</h1>
+        <p>Clear answers, no pressure, no hidden fees.</p>
+    </section>
+
+    <section class="formexterior">
+        <form action="#" method="post" class="contact-form">
+            <h2>Contact Us</h2>
+            <p class="form-intro">
+                Tell us a little about your business, and we’ll respond within 1 business day.
+            </p>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <hr>
+
+            <label for="business-name">Business Name</label>
+            <input type="text" id="business-name" name="business_name">
+
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone_number">
+
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email_address" required>
+
+            <hr>
+
+            <label for="help-message">How Can We Help?</label>
+            <textarea id="help-message" name="message" rows="5" required></textarea>
+
+            <p class="privacy-note">
+                We only use this information to respond to your request. We never sell your data.
+                See our Privacy Policy.
+            </p>
+
+            <button type="submit" class="abtn" disabled>Send Message</button>
+        </form>
+    </section>
+
+
+    <footer>
+        <section class="topfooter">
+            <img src="images/logo.png" width="300vw" height="auto" alt="logomark" href="index.html">
+            <div class="footercolumn">
+                <p><strong>Quick Links:</strong></p>
+                <ul>
+                    <li><a href="construction.html">General Construction</a></li>
+                    <li><a href="business.html">Rentals and Storefronts</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="getaquote.html">Get A Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="footercolumn">
+                <p>Phone Number:<br><a href="tel:916-435-0200">916-435-0200</a></p>
+                <p>Email:<br><a class="smalltext" href="mailto:&#116;&#101;&#100;&#100;&#105;&#101;&#064;&#104;&#097;&#114;&#114;&#105;&#115;&#097;&#110;&#100;&#097;&#115;&#115;&#111;&#099;&#105;&#097;&#116;&#101;&#115;&#105;&#110;&#115;&#046;&#099;&#111;&#109;">teddie@harrisandassociatesins.com</a></p>
+                <p>Office Hours:<br>9am-5pm Monday-Friday<br>Closed on Holidays</p>
+                <p>“Serving CA, NV & AZ”</p>
+            </div>
+
+            <div class="footerResponsiveColumn">
+                <p>Harris & Associates<br>Insurance Agency LLC<br>License #0K18886</p>
+                <p>3031 Stanford Ranch Road, Ste 2 PMB 117, Rocklin, CA 95765</p>
+            </div>
+        </section>
+        <section class="bottomfooter">
+            <p>Copyright © 2025 Harris & Associates | <a href="legal/privatepolicy.html">Private Policy</a> | <a href="legal/termsofuse.html">Terms of Use</a></p>
+        </section>
+    </footer>
+</body>
+</html>

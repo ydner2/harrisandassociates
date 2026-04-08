@@ -98,6 +98,7 @@ h2{
     line-height: 120%; /* 57.6px */
 }
 
+/* General Naviagation */
 /* header */
 
 header{
@@ -135,12 +136,80 @@ header li a:hover{
     color: var(--systems2-Footer-Hover);
 }
 
+/* footer */
+
+/* information footer */
+
+footer .topfooter{
+    background-color: var(--Ascent);
+    padding: 10px
+}
+
+footer p{
+    font-size: 24px;
+    color: var(--Nav-Bar-White);
+    margin: 0;
+    margin: 20px 10px 20px 10px;
+}
+
+footer p a{
+    color: var(--Nav-Bar-White);
+}
+
+footer p a:hover{
+    color: var(--systems2-Footer-Hover);
+}
+
+footer p .smalltext{
+    font-size: 20px;
+}
+
+footer ul li{
+    /* strong */
+    font-family: Palanquin;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 175%;
+}
+
+footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 20px 10px 20px 10px;
+}
+
+footer ul li a{
+color: var(--Nav-Bar-White);
+text-decoration: none;
+}
+
+/* bottom footer */
+footer .bottomfooter{
+    background-color: var(--systems2-Black);
+    padding: 10px;
+}
+
+footer .bottomfooter p{
+    margin: 0;
+    color: var(--systems2-White);
+    font-weight: 300;
+}
+
+footer .bottomfooter p a{
+    margin: 0;
+    color: var(--systems2-White);
+    font-weight: 300;
+}
+
+footer .bottomfooter p a:hover{
+    color: var(--systems2-Footer-Hover);
+}
+
+/* indexpage */
 /* hero section */
+
 .hero{
-    background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
-    url(images/constructionworkerssmall.jpg) no-repeat;
-    background-position: center;
-    background-size: cover;
     padding: 20px;
     padding-bottom: 40px;
 }
@@ -155,6 +224,32 @@ header li a:hover{
     font-weight: 500;
     line-height: 135%; /* 43.2px */
 }
+
+#indexhero{
+    background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+    url(images/constructionworkerssmall.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* specific pages */
+
+#contacthero{
+    background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+    url(images/insurrancewomansmall.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#contacthero h1{
+    margin-top: 60px;
+}
+
+#contacthero p{
+    margin-bottom: 80px;
+}
+
+/* end specific pages */
 
 .CTA{
     border-radius: 10px;
@@ -381,78 +476,92 @@ header li a:hover{
     margin-bottom: 0;
 }
 
-/* footer */
 
-/* information footer */
-
-footer .topfooter{
-    background-color: var(--Ascent);
-    padding: 10px
+/* Forms */
+/* Forms Card */
+.contact-form{
+    background: var(--systems2-Black);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 16px 48px;
+    border: 6px solid var(--systems2-secondary);
 }
 
-footer p{
-    font-size: 24px;
-    color: var(--Nav-Bar-White);
+/* HEADINGS */
+.contact-form h2 {
+    color: var(--systems2-White);
     margin: 0;
-    margin: 20px 10px 20px 10px;
 }
 
-footer p a{
-    color: var(--Nav-Bar-White);
+.form-intro {
+    color: var(--systems2-White);
 }
 
-footer p a:hover{
-    color: var(--systems2-Footer-Hover);
-}
+/* LABELS */
+.contact-form label {
+    display: block;
+    color: #ffffff;
 
-footer p .smalltext{
-    font-size: 20px;
-}
+    margin-bottom: 6px;
+    margin-top: 20px;
 
-footer ul li{
+    color: var(--systems2-White, #E9F3FF);
+
     /* strong */
+    font-family: Palanquin;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 43.2px */
+}
+
+/* INPUTS */
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background: var(--systems2-White);
+    color: var(--systems2-primary);
+    font-family: Palanquin;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+/* TEXTAREA HEIGHT */
+.contact-form textarea {
+    resize: none;
+}
+
+/* DIVIDER LINE */
+form hr {
+    height: 6px;
+    background:  var(--Color-Option-1);
+    margin: 36px 0;
+    border-radius: 2px;
+}
+
+/* PRIVACY TEXT */
+.privacy-note {
+    color: var(--systems2-White);
+
+    /* small text */
     font-family: Palanquin;
     font-size: 24px;
     font-style: normal;
-    font-weight: 700;
-    line-height: 175%;
+    font-weight: 400;
+    line-height: 130%; /* 31.2px */
 }
 
-footer ul{
-    list-style: none;
-    padding: 0;
-    margin: 20px 10px 20px 10px;
+/* BUTTON */
+.contact-form button{
+    border: none;
+    margin: 40px 20px;
 }
 
-footer ul li a{
-color: var(--Nav-Bar-White);
-text-decoration: none;
-}
-
-
-
-
-
-
-
-/* bottom footer */
-footer .bottomfooter{
-    background-color: var(--systems2-Black);
-    padding: 10px;
-}
-
-footer .bottomfooter p{
-    margin: 0;
-    color: var(--systems2-White);
-    font-weight: 300;
-}
-
-footer .bottomfooter p a{
-    margin: 0;
-    color: var(--systems2-White);
-    font-weight: 300;
-}
-
-footer .bottomfooter p a:hover{
-    color: var(--systems2-Footer-Hover);
+.contact-form button:active, .contact-form button:hover {
+    box-shadow: 0 2px 0 #1d3f61;
+    border: none;
 }
