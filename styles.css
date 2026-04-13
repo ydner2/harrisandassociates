@@ -501,12 +501,11 @@ footer .bottomfooter p a:hover{
 /* LABELS */
 .contact-form label {
     display: block;
-    color: #ffffff;
 
     margin-bottom: 6px;
     margin-top: 20px;
 
-    color: var(--systems2-White, #E9F3FF);
+    color: var(--systems2-White);
 
     /* strong */
     font-family: Palanquin;
@@ -564,4 +563,169 @@ form hr {
 .contact-form button:active, .contact-form button:hover {
     box-shadow: 0 2px 0 #1d3f61;
     border: none;
+}
+
+/* fieldsets */
+fieldset .checkbox-option {
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+    color: var(--systems2-White);
+    cursor: pointer;
+}
+
+.checkbox-option input[type="checkbox"] {
+    width: 28px;
+    height: 28px;
+    margin: 2px 0 0 0;
+    accent-color: var(--Color-Option-1);
+}
+
+.checkbox-option span {
+    max-width: 200px; /* adjust to match your layout */
+    font-weight: 300;
+}
+
+/* remove default fieldset styling */
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* remove legend weird spacing */
+legend {
+    padding: 0;
+    display: block;
+
+    margin-bottom: 6px;
+    margin-top: 20px;
+
+    color: var(--systems2-White);
+
+    /* strong */
+    font-family: Palanquin;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 135%; /* 43.2px */
+}
+
+/* constrain the whole checkbox section */
+.insurance-group {
+    max-width: 280px; /* adjust as needed */
+}
+
+.insurance-group {
+    width: 100%;
+}
+
+
+/* Contact Card on contact us page */
+/* CONTACT DETAILS CARD */
+.contact-details-card {
+    background: var(--systems2-Black);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 300px;
+    border-radius: 16px 48px;
+    border: 6px solid var(--systems2-secondary);
+}
+
+/* EACH ROW */
+.contact-detail-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+/* ICON */
+.contact-icon-link img {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+/* TEXT CONTAINER */
+.contact-detail-text h2 {
+    margin: 0;
+    color: var(--systems2-White);
+
+    /* match your smaller header style */
+    font-family: Palanquin;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 130%;
+}
+
+.contact-detail-text p {
+    margin: 4px 0 0 0;
+    color: var(--systems2-White);
+
+    font-family: Palanquin;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 130%;
+}
+
+/* LINKS */
+.contact-detail-text a {
+    color: var(--systems2-White);
+    text-decoration: none;
+}
+
+.contact-detail-text a:hover {
+    color: var(--systems2-Footer-Hover);
+}
+
+.contact-detail-text .smalltext{
+    font-size: 16px;
+}
+
+/* SPECIAL: "Get a Quote" row */
+.contact-detail-text h2 a {
+    text-decoration: underline;
+}
+
+.contact-icon-link {
+    display: inline-flex;
+    border-radius: 8px;
+    transition: background-color 0.25s ease;
+}
+
+.contact-icon-link {
+    position: relative;
+    display: inline-flex;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* the expanding color */
+.contact-icon-link::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle, var(--Color-Option-1) 0%, transparent 70%);
+    transform: scale(0);
+    transition: transform 0.4s ease;
+    z-index: 0;
+}
+
+/* bring icon above the effect */
+.contact-icon-link img {
+    position: relative;
+    z-index: 1;
+    transition: transform 0.25s ease;
+}
+
+/* hover trigger */
+.contact-icon-link:hover::before {
+    transform: scale(2.5);
+}
+
+.contact-icon-link:hover img {
+    transform: scale(1.1);
 }

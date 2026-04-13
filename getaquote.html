@@ -38,6 +38,80 @@
         </nav>
     </header>
 
+    <section class="formexterior">
+        <form action="#" method="post" class="contact-form">
+            <h2>Get a Quote</h2>
+            <p class="form-intro">
+                Fill out the form for a fast and easy quote.
+            </p>
+
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first_name" required>
+
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last_name" required>
+
+            <hr>
+
+            <label for="business-name">Business Name</label>
+            <input type="text" id="business-name" name="business_name">
+
+            <label for="phone-number">Phone Number</label>
+            <input type="tel" id="phone-number" name="phone_number">
+
+            <label for="email-address">Email Address</label>
+            <input type="email" id="email-address" name="email_address" required>
+
+            <hr>
+
+
+            <!-- fieldset for general construction -->
+            <fieldset class="insurance-options">
+                <legend>What insurance and services are you interested in?</legend>
+
+                <label class="checkbox-option" for="general-construction">
+                    <input type="checkbox" id="general-construction" name="services[]" value="General Construction">
+                    <span class="checkboxtext">General Construction</span>
+                </label>
+
+                <label class="checkbox-option" for="workers-comp">
+                    <input type="checkbox" id="workers-comp" name="services[]" value="Workers Comp General Liability">
+                    <span class="checkboxtext">Workers Comp General Liability</span>
+                </label>
+
+                <label class="checkbox-option" for="commercial-auto">
+                    <input type="checkbox" id="commercial-auto" name="services[]" value="Business/Commercial Auto">
+                    <span class="checkboxtext">Business/Commercial Auto</span>
+                </label>
+
+                <label class="checkbox-option" for="contractor-bonds">
+                    <input type="checkbox" id="contractor-bonds" name="services[]" value="Contractor Bonds">
+                    <span class="checkboxtext">Contractor Bonds</span>
+                </label>
+
+                <label class="checkbox-option" for="store-front">
+                    <input type="checkbox" id="store-front" name="services[]" value="Business/Store Front">
+                    <span class="checkboxtext">Business/Store Front</span>
+                </label>
+
+                <label class="checkbox-option" for="other-service">
+                    <input type="checkbox" id="other-service" name="services[]" value="Other">
+                    <span class="checkboxtext">Other</span>
+                </label>
+            </fieldset>
+
+            <label for="help-message">How Can We Help?</label>
+            <textarea id="help-message" name="message" rows="5" required></textarea>
+
+            <p class="privacy-note">
+                We only use this information to respond to your request. We never sell your data.
+                See our Privacy Policy.
+            </p>
+
+            <button type="submit" class="abtn" disabled>Send Message</button>
+        </form>
+    </section>
+
 
     <footer>
         <section class="topfooter">
