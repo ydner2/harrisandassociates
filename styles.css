@@ -682,7 +682,7 @@ legend {
 }
 
 .contact-detail-text .smalltext{
-    font-size: 16px;
+    font-size: 15px;
 }
 
 /* SPECIAL: "Get a Quote" row */
@@ -692,8 +692,9 @@ legend {
 
 .contact-icon-link {
     display: inline-flex;
-    border-radius: 8px;
+    border-radius: 40px;
     transition: background-color 0.25s ease;
+    padding: 5px;
 }
 
 .contact-icon-link {
