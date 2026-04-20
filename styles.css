@@ -492,6 +492,11 @@ footer .bottomfooter p a:hover{
     url(images/constructionmanonphonesmall.jpg) lightgray 50% / cover no-repeat;
 }
 
+#contactsectionbusiness{
+    background: linear-gradient(0deg, rgba(233, 243, 255, 0.50) 0%, rgba(233, 243, 255, 0.50) 100%), 
+    url(images/storefrontwomanonphonesmall.jpg) lightgray 50% / cover no-repeat;
+}
+
 .contactsection h2{
     margin-top: 0;
     margin-bottom: 0;
@@ -943,6 +948,134 @@ legend {
 }
 
 /* business cards */
+.darkbluebg{
+    background-color: var(--Buttons-2nd-Accent);
+    padding: 20px;
+}
+
+.darkbluebg h2{
+    margin: 0;
+    color: var(--systems2-White)
+}
+
+.policy-list {
+    display: grid;
+}
+
+.policy-card {
+    margin: 20px;
+    border-radius: 0 48px;
+    border: 9px solid var(--systems2-primary);
+    overflow: hidden;
+}
+
+.policy-card:first-child{
+    margin-top: 40px;
+}
+
+.policy-card:last-child{
+    margin-bottom: 40px;
+}
+
+/* clickable header */
+.policy-header {
+    width: 100%;
+    background: none;
+    border: none;
+    padding: 20px;
+    text-align: left;
+    cursor: pointer;
+}
+
+/* top layout */
+.policy-top {
+    display: grid;
+    grid-template-columns: 72px 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.policy-icon {
+    width: 60px;
+    height: 60px;
+}
+
+.policy-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+}
+
+.policy-description {
+    display: block;
+    font-size: 26px;
+    margin-bottom: 28px;
+}
+
+.policy-link {
+    display: block;
+    text-align: center;
+    font-size: 24px;
+    color: var(--Buttons-2nd-Accent);
+    text-decoration: underline;
+}
+
+/* hidden by default */
+.policy-details {
+    display: none;
+    padding: 0 20px 20px 20px;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 20px;
+    transition:
+        max-height 0.4s ease,
+        opacity 0.3s ease,
+        padding 0.3s ease;
+}
+
+.policy-details br{
+    line-height: 1.7em;
+}
+
+/* open state */
+.policy-card.open .policy-details {
+    display: block;
+    max-height: 800px; /* raise if needed */
+    opacity: 1;
+    padding: 0 20px 20px 20px;
+}
+
+.policy-card.open .policy-link {
+    display: none;
+}
+
+/* expanded text */
+.policy-details p {
+    margin: 0 0 24px 0;
+    font-size: 24px;
+}
+
+.policy-details strong {
+    font-weight: 700;
+}
+
+/* CTA */
+.policy-cta {
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/* smaller version */
+.ctasmall {
+    padding: 12px 20px;
+    font-size: 22px;
+    max-width: 260px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.25);
+}
 
 
 /* Count on us */
