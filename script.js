@@ -45,14 +45,16 @@ if (policy) {
     const checkboxes = document.querySelectorAll('input[name="services[]"]');
 
     checkboxes.forEach(box => {
-        if (
-            (policy === "storefront" && box.value.includes("Store Front")) ||
-            (policy === "auto" && box.value.includes("Auto")) ||
-            (policy === "property" && box.value.includes("Construction"))
-        ) {
+        if (box.value === policy) {
             box.checked = true;
         }
     });
+
+     if (policy) {
+        document.querySelector(".contact-form")?.scrollIntoView({
+        behavior: "smooth"
+    });
+}
 
 }
 })();
