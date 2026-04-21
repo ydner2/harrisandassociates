@@ -1570,21 +1570,21 @@ legend {
         padding: 40px 40px 60px 40px;
         display: flex;
         flex-direction: column;
-        gap: 40px;
+        gap: 52px;
         text-align: center;
     }
 
     .testimonials h2 {
+        margin-top: 40px;
         font-size: 64px;
-        margin-bottom: 30px;
     }
 
     .testimonials div {
         display: grid;
         grid-template-columns: 1fr minmax(600px, 900px) 1fr;
         align-items: stretch;
-        margin: auto;
-        max-width: 800px;
+        margin: 0 auto 0 auto;
+        max-width: 600px;
         width: 100%;
     }
 
