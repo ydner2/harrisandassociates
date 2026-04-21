@@ -1,4 +1,4 @@
-
+/* ROOT CLASSES */
 :root{
     /* Header and footer */
     --Ascent: #567C42;
@@ -18,6 +18,8 @@
 *{
 font-family: "Palaquin", sans-serif;
 }
+
+/* GENERAL PAGE SET UP */
 
 html{
     background-color: var(--systems2-White);
@@ -57,6 +59,7 @@ a:hover{
     align-items: center;
     gap: 10px;
     margin: auto;
+    text-align: center;
 
     /* strong */
     font-family: Palanquin;
@@ -75,6 +78,10 @@ a:hover{
 
 .abtn:hover{
     background: var(--Color-Option-1);
+}
+
+body{
+    max-width: 1440px;
 }
 
 h1{
@@ -145,9 +152,9 @@ header li a:hover{
     color: var(--systems2-Footer-Hover);
 }
 
-/* footer */
+/* FOOTER */
 
-/* information footer */
+/* INFORMATION FOOTER */
 
 footer .topfooter{
     background-color: var(--Ascent);
@@ -165,7 +172,7 @@ footer p a{
     color: var(--Nav-Bar-White);
 }
 
-footer p a:hover{
+footer p a:hover, footer ul li a:hover{
     color: var(--systems2-Footer-Hover);
 }
 
@@ -193,7 +200,7 @@ color: var(--Nav-Bar-White);
 text-decoration: none;
 }
 
-/* bottom footer */
+/* BOTTOM FOOTER */
 footer .bottomfooter{
     background-color: var(--systems2-Black);
     padding: 10px;
@@ -215,8 +222,8 @@ footer .bottomfooter p a:hover{
     color: var(--systems2-Footer-Hover);
 }
 
-/* indexpage */
-/* hero section */
+/* INDEX PAGE */
+/* HERO SECTION */
 
 .hero{
     padding: 20px;
@@ -241,7 +248,7 @@ footer .bottomfooter p a:hover{
     background-size: cover;
 }
 
-/* specific pages */
+/* SPECIFIC HERO PAGES */
 
 #abouthero{
     background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
@@ -286,7 +293,7 @@ footer .bottomfooter p a:hover{
     margin-bottom: 80px;
 }
 
-/* end specific pages */
+/* //end SPECIFIC PAGES */
 
 .CTA{
     border-radius: 10px;
@@ -298,6 +305,7 @@ footer .bottomfooter p a:hover{
     justify-content: center;
     align-items: center;
     gap: 10px;
+    text-align: center;
 
     max-width: 300px;
 
@@ -321,7 +329,7 @@ footer .bottomfooter p a:hover{
 }
 
 
-/* featured section */
+/* FEATURED SECTION */
 
 .featured img{
     border-radius: 16px;
@@ -355,7 +363,7 @@ footer .bottomfooter p a:hover{
     background: var(--systems2-secondary);
 }
 
-/* mission section */
+/* MISSION SECTION */
 
 .missionbgimage{
     background: linear-gradient(0deg, var(--Mission-statement-level, rgba(30, 75, 124, 0.70)) 0%, 
@@ -417,7 +425,7 @@ footer .bottomfooter p a:hover{
     line-height: 50px; /* 125% */
 }
 
-/* Partners Section */
+/* PARTNERS SECTION */
 .partners{
     display: none;
     background-color: var(--systems2-Black);
@@ -434,7 +442,7 @@ footer .bottomfooter p a:hover{
     color: var(--systems2-White, #E9F3FF);
 }
 
-/* testimonial section */
+/* TESTIMONIALS SECTION */
 
 .testimonials{
     background-color: var(--systems2-primary);
@@ -477,15 +485,14 @@ footer .bottomfooter p a:hover{
     color: var(--systems2-White, #E9F3FF);
     text-align: right;
 
-    /* small text */
     font-family: Palanquin;
     font-size: 24px;
     font-style: normal;
     font-weight: 400;
-    line-height: 130%; /* 31.2px */
+    line-height: 130%;
 }
 
-/* CTA section */
+/* CTA SECTION */
 
 .CTAsection{
     background-color: var(--systems2-secondary);
@@ -500,13 +507,15 @@ footer .bottomfooter p a:hover{
     margin-bottom: 40px;
 }
 
-/* Contact Us section  */
+/* CONTACT US SECTION  */
 
 .contactsection{
     padding: 20px;
     background: linear-gradient(0deg, rgba(233, 243, 255, 0.50) 0%, rgba(233, 243, 255, 0.50) 100%), 
     url(images/constructionmanonphonesmall.jpg) lightgray 50% / cover no-repeat;
 }
+
+/* SPECIFIC CONTACT US SECTIONS */
 
 #contactsectionbusiness{
     background: linear-gradient(0deg, rgba(233, 243, 255, 0.50) 0%, rgba(233, 243, 255, 0.50) 100%), 
@@ -524,8 +533,8 @@ footer .bottomfooter p a:hover{
 }
 
 
-/* Forms */
-/* Forms Card */
+/* FORMS */
+/* GENERAL LAYOUT */
 .contact-form{
     background: var(--systems2-Black);
     margin: 20px auto;
@@ -612,7 +621,7 @@ form hr {
     border: none;
 }
 
-/* fieldsets */
+/* FIELDSETS */
 fieldset .checkbox-option {
     display: flex;
     justify-content: flex-start;
@@ -669,7 +678,7 @@ legend {
 }
 
 
-/* Contact Card on contact us page */
+/* CONTACT CARD ON CONTACT US PAGE */
 /* CONTACT DETAILS CARD */
 .contact-details-card {
     background: var(--systems2-Black);
@@ -1367,4 +1376,307 @@ legend {
     border-right: none;
 
     margin: 0 -20px 32px auto;
+}
+
+@media (min-width: 600px) {
+
+    /* GENERAL ELEMENTS */
+    body{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* HEADER AND NAV */
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .navhamburger{
+        display: none;
+    }
+
+    nav{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    nav ul li a{
+        font-size: 28px;
+    }
+
+    .navCTA{
+        border-radius: 10px;
+        background: var(--Buttons-gradient, linear-gradient(270deg, #1E4B7C 0%, #0D2439 100%));
+        box-shadow: 9px 10px 6.1px 0 rgba(0, 0, 0, 0.62);
+        display: flex;
+        margin: auto;
+        padding: 16px 61px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        max-width: 300px;
+
+        text-decoration: none;
+        color: var(--systems2-White);
+
+        /* strong */
+        font-family: Palanquin;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 135%; /* 43.2px */
+
+        /* animation */
+        transition: 1s ease;
+    }
+
+    .navCTA:hover{
+        background: var(--systems2-White);
+        color: var(--systems2-Black, #111215);
+    }
+
+    /* FOOTER */
+    .topfooter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "logo links"
+            "info contact";
+        row-gap: 0;
+        column-gap: 40px;
+        align-items: start;
+    }
+
+    .topfooter img {
+        grid-area: logo;
+        width: 220px;
+        height: auto;
+    }
+
+    .topfooter .fc1 {
+        grid-area: info;
+    }
+
+    .topfooter .fc2 {
+        grid-area: links;
+    }
+
+    .topfooter .fc3 {
+        grid-area: contact;
+    }
+
+    .bottomfooter{
+        text-align: center;
+    }
+
+    /* HERO SECTION */
+    h1{
+        text-align: center;
+        font-size: 96px;
+        font-weight: 400;
+    }
+
+    .hero {
+        min-height: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;   /* vertical centering */
+        align-items: center;       /* horizontal centering */
+        text-align: center;
+        padding: 40px 20px;
+        box-sizing: border-box;
+    }
+
+    .hero p{
+        text-align: center;
+        max-width: 1000px;
+    }
+
+    .CTA{
+        margin-top: 0;
+    }
+
+    /* SPECIFIC PAGES HERO SECTION */
+    #indexhero{
+        background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+        url(images/constructionworkers.jpeg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+
+    /* FEATURED SECTION ON INDEX PAGE */
+
+    .featured{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 40px;
+        justify-content: space-around;
+        margin-bottom: 80px;
+    }
+
+    .fcards{
+        flex: 1;
+    }
+
+    .card3{
+        background-color: var(--systems2-White);
+    }
+
+    /* MISSION SECTION ON INDEX PAGE */
+
+    .mission{
+        background-color: var(--systems2-secondary);
+    }
+
+    .missionbgimage{
+        height: 480px;
+        background: linear-gradient(0deg, var(--Mission-statement-level, rgba(30, 75, 124, 0.70)) 0%, 
+        var(--Mission-statement-level, rgba(30, 75, 124, 0.70)) 100%), 
+        url(images/paperworkwithwriting.jpg) lightgray 50% / cover no-repeat;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .darkbluebg{
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .lightbluebg p{
+        max-width: 700px;
+        margin: auto;
+    }
+
+
+    /* TESTIMONIAL SECTION */
+
+    .testimonials {
+        height: 600px;
+        padding: 40px 40px 60px 40px;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .testimonials h2 {
+        font-size: 64px;
+        margin-bottom: 30px;
+    }
+
+    .testimonials div {
+        display: grid;
+        grid-template-columns: 1fr minmax(600px, 900px) 1fr;
+        align-items: stretch;
+        margin: auto;
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .testimonials .testimonialquotemarkleft {
+        grid-column: 1;
+        justify-self: start;
+        align-self: start;   /* top */
+        font-size: 48px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    .testimonials .testimonialmiddle {
+        grid-column: 2;
+        text-align: left;
+        font-size: 32px;
+    }
+
+    .testimonials .testimonialquotemarkright {
+        grid-column: 3;
+        justify-self: end;
+        align-self: end;     /* bottom */
+        font-size: 48px;
+        line-height: 1;
+        margin: 0;
+    }
+
+    /* CTA SECTION */
+    .CTAsection{
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .CTAsection h2{
+        text-align: center;
+    }
+
+
+    /* CONTACT US SECTION */
+
+    .contactsection{
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        background: linear-gradient(0deg, rgba(233, 243, 255, 0.50) 0%, rgba(233, 243, 255, 0.50) 100%), 
+        url(images/constructionmanonphone.jpg) lightgray 50% / cover no-repeat;
+    }
+
+    .contactsection h2{
+        text-align: center;
+    }
+
+    .contactsection p{
+        text-align: center;
+        max-width: 700px;
+    }
+
+    .contactsection .abtn{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media (min-width: 840px){
+    .topfooter {
+        grid-template-columns: 1.2fr 1fr 1fr;
+        grid-template-areas:
+            "logo links contact"
+            "info links contact";
+    }
+
+    .topfooter .fc1 {
+        grid-area: info;
+    }
+
+    .testimonials .leftaligned{
+        margin-right: 15vw;
+    }
+}
+
+@media (min-width: 1000px){
+        .featured{
+        margin-top: -120px;
+        margin-bottom: 80px;
+    }
 }
