@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harris and Associates Insurrance</title>
+
+    <!-- normalize CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Palanquin:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logoandham">
+            <a href="index.html">
+                <img src="images/logo.png" class="logo" width="240" height="auto" alt="Harris and Associates Insurance Logo" href="index.html">
+            </a>
+            <img src="images/hamburger.png" alt="hamburger" width="46" height="38" class="navhamburger">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="construction.html">Construction</a></li>
+                <li><a href="business.html">Business</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="getaquote.html" class="navCTA">Get a Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="constructionhero">
+        <h1>Insurance Solutions for General Contractors</h1>
+        <p>Protecting your projects, your crew, and your livelihood with coverage tailored to the construction industry.</p>
+        <a href="getaquote.html" class="CTA">Get a Quote</a>
+    </section>
+
+    <section class="contractors">
+        <h2>Protecting Contractors Where It Matters Most</h2>
+
+        <p>
+            Running a contracting business comes with risks – from jobsite accidents to liability claims.
+        </p>
+
+        <p>
+            Harris & Associates provides specialized coverage that keeps you compliant, protected, and ready to build with confidence.
+        </p>
+
+        <p class="contractors-intro">
+            <strong>Our most requested policies for general contractors include:</strong>
+        </p>
+
+        <ul class="contractor-list">
+            <li>
+                <img src="images/liabilityicon.png" alt="liability icon">
+                <span>General Liability</span>
+            </li>
+
+            <li>
+                <img src="images/workershealthicon.png" alt="workers health icon">
+                <span>Workers’ Compensation</span>
+            </li>
+
+            <li>
+                <img src="images/truckicon.png" alt="truck icon">
+                <span>Commercial Auto</span>
+            </li>
+
+            <li>
+                <img src="images/contractoricon.png" alt="contractor icon">
+                <span>Contractor Bonds</span>
+            </li>
+
+            <li>
+                <img src="images/professionalicon.png" alt="professional icon">
+                <span>Professional Liability</span>
+            </li>
+
+            <li>
+                <img src="images/toolsicon.png" alt="tools coverage icon">
+                <span>Equipment & Tools Coverage</span>
+            </li>
+
+            <li>
+                <img src="images/umbrellaicon.png" alt="umbrella icon">
+                <span>Umbrella Liability</span>
+            </li>
+        </ul>
+    </section>
+
+    <section class="requested-policies">
+        <div class="darkbluebg">
+            <h2>Our Most Requested Policies</h2>
+        </div>
+
+        <div class="policy-list">
+
+            <!-- General Liability -->
+            <article class="policy-card card1">
+                <button class="policy-header" aria-expanded="false" aria-controls="policy-property">
+                    
+                    <span class="policy-top">
+                        <img src="images/liabilityiconhq.png" alt="liability sheild icon" class="policy-icon" width="auto" height="100%">
+                        <span class="policy-title">General Liability</span>
+                    </span>
+
+                    <span class="policy-description">
+                        Essential protection for contractors, covering accidents, injuries, and property damage.
+                    </span>
+
+                    <span class="policy-link">Learn More</span>
+                </button>
+
+                <div class="policy-details" id="policy-property">
+                    <p><strong>What’s Covered?</strong> Third-party bodily injury, property damage, and legal defense.</p>
+                    <p><strong>Extra Protection:</strong> Optional add-ons for higher limits or specific job-site needs.</p>
+                    <p><strong>Common Question:</strong> <em>Is general liability required for contractors?</em> <br>Yes — it’s often mandatory for licenses and contracts.</p>
+
+                    <a href="getaquote.html?policy=generalliability&source=businesspage" class="policy-cta CTA ctasmall">
+                        Get a Quote for Commercial Property Insurance
+                    </a>
+                </div>
+            </article>
+
+            <!-- Commercial Auto -->
+            <article class="policy-card card2">
+                <button class="policy-header" aria-expanded="false" aria-controls="policy-auto">
+                    
+                    <span class="policy-top">
+                        <img src="images/truckhighquality.png" alt="company truck vehicle icon" class="policy-icon" width="auto" height="100%">
+                        <span class="policy-title">Commercial Auto</span>
+                    </span>
+
+                    <span class="policy-description">
+                        Insurance for the vehicles you and your team rely on, from deliveries to daily operations.
+                    </span>
+
+                    <span class="policy-link">Learn More</span>
+                </button>
+
+                <div class="policy-details" id="policy-auto">
+                    <p><strong>What’s Covered?</strong> Liability and damage for business vehicles, beyond personal auto policies.</p>
+                    <p><strong>Extra Protection:</strong> Coverage for employee use and hauling equipment.</p>
+                    <p><strong>Common Question:</strong> <em>Can I use my personal auto policy?</em> <br>Usually no. Business use requires a commercial policy.</p>
+
+                    <a href="getaquote.html?policy=auto&source=businesspage" class="policy-cta CTA ctasmall">
+                        Get a Quote for Commercial Auto Insurance
+                    </a>
+                </div>
+            </article>
+
+            <!-- Workers Comp -->
+            <article class="policy-card">
+                <button class="policy-header" aria-expanded="false" aria-controls="policy-storefront">
+                    
+                    <span class="policy-top">
+                        <img src="images/workershealthhq.png" alt="workers health icon" width="auto" height="100%" class="policy-icon">
+                        <span class="policy-title">Worker's Compensation</span>
+                    </span>
+
+                    <span class="policy-description">
+                        Mandatory coverage for contractors with employees, protecting both your team and your business.
+                    </span>
+
+                    <span class="policy-link">Learn More</span>
+                </button>
+
+                <div class="policy-details" id="policy-storefront">
+                    <p><strong>What’s Covered?</strong> Medical expenses, lost wages, and rehabilitation costs for employees injured on the job.</p>
+                    <p><strong>Extra Protection:</strong> Helps shield your business from costly lawsuits related to workplace accidents.</p>
+                    <p><strong>Common Question:</strong> <em>Do I need workers’ comp if I only hire subcontractors?</em> <br>Yes — you must verify that subs carry their own coverage, or you may be held responsible.</p>
+
+                    <a href="getaquote.html?policy=workerscomp&source=businesspage" class="policy-cta CTA ctasmall">
+                        Get a Quote for Worker's Compensation
+                    </a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <section class="why-us">
+    <header class="why-us-header">
+        <h2>Why Harris &amp; Associates</h2>
+    </header>
+
+    <div class="why-us-cards">
+        <article class="why-card why-card-green">
+            <img src="images/trustedbycontractors.jpg" alt="Contractors on a job site">
+            <h3>Trusted by Contractors</h3>
+            <p>
+                For nearly 20 years, we’ve provided reliable coverage that contractors,
+                property owners, and businesses can count on.
+            </p>
+        </article>
+
+        <article class="why-card why-card-blue">
+            <img src="images/insurrancenumbers.jpg" alt="ethical insurance options produced by Harris and Associates Insurance">
+            <h3>Ethical Guidance</h3>
+            <p>
+                We put your needs first, offering clear explanations and fair solutions —
+                no hidden fees, no pushy sales.
+            </p>
+        </article>
+
+        <article class="why-card why-card-cream">
+            <img src="images/explainingtocontractor.jpg" alt="insurance woman explains insurance options to contractor">
+            <h3>Proven Expertise</h3>
+            <p>
+                With decades of specialized experience in construction and business
+                insurance, we know the risks you face — and how to protect against them.
+            </p>
+        </article>
+    </div>
+</section>
+
+    <section class="coverage-trust">
+        <h2>Insurance that Works as Hard as You Do</h2>
+
+        <img id="foreman" src="images/happyforeman.jpg" alt="happy general construction foreman">
+
+        <p>With decades of experience, we simplify complex insurance requirements so you can focus on the job.</p>
+
+        <p>We deliver fast certificates of insurance, clear answers, and coverage designed for contractors like you.</p>
+    </section>
+
+    <section class="faq">
+    <h2 class="visually-hidden">Frequently Asked Questions</h2>
+
+    <ul class="faq-list">
+
+        <!-- CLOSED -->
+        <li class="faq-item icon-coi">
+                <button 
+                    class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq1"
+                >
+                    How quickly can I get proof of coverage (COI)?
+                    <img class="faq-arrow" src="images/arrowdown.png" alt="arrow down" width="auto" height="60">
+                </button>
+
+                <div id="faq1" class="faq-answer">
+                    <p>
+                        Most certificates of insurance can be issued within 24 hours. Our team specializes in fast turnaround, so you’ll have documents ready when clients or lenders request them.
+                    </p>
+                </div>
+            </li>
+
+            <!-- CLOSED -->
+            <li class="faq-item icon-tools">
+                    <button 
+                        class="faq-question"
+                        aria-expanded="false"
+                        aria-controls="faq2"
+                    >
+                        Do I need separate coverage for my tools and equipment?
+                        <img class="faq-arrow" src="images/arrowdown.png" alt="arrow down" width="auto" height="60">
+                    </button>
+
+                <div id="faq2" class="faq-answer">
+                    <p>
+                        Yes. General liability won’t cover stolen or damaged equipment. Inland Marine coverage protects tools, machinery, and other equipment you use for business.
+                    </p>
+                </div>
+            </li>
+
+            <!-- OPEN -->
+            <li class="faq-item icon-cost">
+                <button 
+                    class="faq-question"
+                    aria-expanded="false"
+                    aria-controls="faq3"
+                >
+                    What factors affect my insurance cost?
+                    <img class="faq-arrow" src="images/arrowdown.png" alt="arrow down" width="auto" height="60">
+                </button>
+
+                <div id="faq3" class="faq-answer">
+                    <p>
+                        Rates are based on property type, number of tenants or units, claims history, and your chosen coverage limits.
+                        We’ll walk you through every factor so there are no surprises.
+                    </p>
+                </div>
+            </li>
+
+        </ul>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div>
+            <p class="testimonialquotemarkleft">“</p>
+            <p class="testimonialmiddle">Harris & Associates understands contractors. They got me bonded quickly, handled my workers’ comp without a headache, and always pick up the phone when I need a COI. That kind of service keeps my jobs moving.</p>
+            <p class="testimonialquotemarkright">”</p>
+        </div>
+        <p class="leftaligned"> — General Contractor, <br>Roseville, CA</p>
+    </section>
+
+    <section class="CTAsection">
+        <h2>Ready to Protect Your Business?</h2>
+        <a href="getaquote.html" class="CTA">Get a Quote</a>
+    </section>
+
+    <section class="contactsection" id="contactsectionbusiness">
+        <h2>Want to Talk It Through?</h2>
+        <p>We’re here to help with clear answers, no pressure and no hidden fees.</p>
+        <a href="contact.html" class="abtn">Contact Us</a>
+    </section>
+
+    <footer>
+        <section class="topfooter">
+            <img src="images/logo.png" width="300vw" height="auto" alt="logomark" href="index.html">
+            <div class="footercolumn">
+                <p><strong>Quick Links:</strong></p>
+                <ul>
+                    <li><a href="construction.html">General Construction</a></li>
+                    <li><a href="business.html">Rentals and Storefronts</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="getaquote.html">Get A Quote</a></li>
+                </ul>
+            </div>
+
+            <div class="footercolumn">
+                <p>Phone Number:<br><a href="tel:916-435-0200">916-435-0200</a></p>
+                <p>Email:<br><a class="smalltext" href="mailto:&#116;&#101;&#100;&#100;&#105;&#101;&#064;&#104;&#097;&#114;&#114;&#105;&#115;&#097;&#110;&#100;&#097;&#115;&#115;&#111;&#099;&#105;&#097;&#116;&#101;&#115;&#105;&#110;&#115;&#046;&#099;&#111;&#109;">teddie@harrisandassociatesins.com</a></p>
+                <p>Office Hours:<br>9am-5pm Monday-Friday<br>Closed on Holidays</p>
+                <p>“Serving CA, NV & AZ”</p>
+            </div>
+
+            <div class="footerResponsiveColumn">
+                <p>Harris & Associates<br>Insurance Agency LLC<br>License #0K18886</p>
+                <p>3031 Stanford Ranch Road, Ste 2 PMB 117, Rocklin, CA 95765</p>
+            </div>
+        </section>
+        <section class="bottomfooter">
+            <p>Copyright © 2025 Harris & Associates | <a href="legal/privatepolicy.html">Private Policy</a> | <a href="legal/termsofuse.html">Terms of Use</a></p>
+        </section>
+    </footer>   
+</body>
+</html>
