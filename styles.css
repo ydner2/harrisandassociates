@@ -513,6 +513,11 @@ footer .bottomfooter p a:hover{
     url(images/storefrontwomanonphonesmall.jpg) lightgray 50% / cover no-repeat;
 }
 
+#contactsectionbusiness{
+    background: linear-gradient(0deg, rgba(233, 243, 255, 0.50) 0%, rgba(233, 243, 255, 0.50) 100%), 
+    url(images/constructionworkeronphoneinsacramento.jpg) lightgray 50% / cover no-repeat;
+}
+
 .contactsection h2{
     margin-top: 0;
     margin-bottom: 0;
