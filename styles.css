@@ -1654,6 +1654,77 @@ legend {
         margin-bottom: 0;
     }
 
+    /* FORM SETTINGS */
+
+    .contact-form{
+        max-width: 700px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+    }
+
+    .form-intro {
+        text-align: center;
+    }
+
+    /* INPUTS */
+    #first-name{
+        max-width: 250px;
+    }
+
+    #last-name{
+        max-width: 300px;
+    }
+
+    #business-name{
+        max-width: 450px;
+    }
+
+    #phone-number{
+        max-width: 250px;
+    }
+
+    #email-address{
+        max-width: 550px;
+    }
+
+    .checkbox-option input[type="checkbox"] {
+        width: 28px;
+        height: 28px;
+        margin: 2px 0 0 40px;
+        accent-color: var(--Color-Option-1);
+    }
+
+    .checkbox-option span {
+        max-width: 500px; /* adjust to match your layout */
+    }
+
+    .contact-form button{
+    margin: 40px auto;
+    }
+
+    .formexterior {
+        padding: 60px 20px;
+        background:
+            linear-gradient(rgba(233, 243, 255, 0.6), rgba(233, 243, 255, 0.6)),
+            url(images/tools.jpg) center / cover no-repeat;
+    }
+
+    #quotehero{
+        background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+        url(images/couplehappyfromsavings.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #quotehero h1{
+        max-width: 1200px;
+    }
+
+    #quotehero p{
+        max-width: 800px;
+    }
 
 }
 
@@ -1672,6 +1743,10 @@ legend {
     .testimonials .leftaligned{
         margin-right: 15vw;
     }
+}
+
+@media (min-width: 900px){
+    .contact-form{ margin-top: -160px;}
 }
 
 @media (min-width: 1000px){

@@ -108,6 +108,4 @@ if (policy) {
 
 } //ends for form auto fill
 
-
-
 })();
