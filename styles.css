@@ -889,7 +889,7 @@ legend {
 }
 
 .meet-teddie h2 {
-    margin: 0 0 220px 0;
+    margin: 0 0 500px 0;
     color: var(--systems2-secondary);
 }
 
@@ -1522,6 +1522,20 @@ legend {
     background-size: cover;
     }
 
+    #abouthero{
+        background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+        url(images/insurancewomanexplainingclearly.jpg) no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #abouthero h1{
+        max-width: 1100px;
+    }
+
+    #abouthero p{
+        max-width: 800px;
+    }
 
 
     /* FEATURED SECTION ON INDEX PAGE */
@@ -1759,6 +1773,56 @@ legend {
         max-width: 500px;
     }
 
+    /* ABOUT HARRIS AND ASSOCIATES */
+
+    .about-stats ul{
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-stats ul li{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 400px;
+        text-align: center;
+    }
+
+    /* PROMISE SECTION */
+
+    .promisedulsection{
+        padding: 80px 40px;
+        height: 500px;
+    }
+
+    .promisedulsection ul{
+        display: grid;
+        grid-template-columns: 500px 500px;
+        justify-content: center;
+        grid-template-rows: repeat(2, 1fr);
+        gap: 40px 80px;
+        align-items: center;
+        height: 100%;
+    }
+
+    /* MEET TEDDIE SECTION */
+
+    .meet-teddie h2 {
+        margin: 0 0 20px 320px;
+    }
+
+    .meet-teddie img {
+        max-width: 300px;
+        height: 500px;
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .meet-teddie-content {
+        margin: 0 0 0 320px;
+    }
+
 }
 
 @media (min-width: 840px){
@@ -1775,6 +1839,21 @@ legend {
 
     .testimonials .leftaligned{
         margin-right: 15vw;
+    }
+
+/* MEET TEDDIE SECTION */
+
+    .meet-teddie h2 {
+        margin: 0 0 20px 50vw;
+    }
+
+    .meet-teddie img {
+        max-width: 40vw;
+    }
+
+    .meet-teddie-content {
+        margin: 0 0 0 50vw;
+        max-width: 400px;
     }
 }
 
