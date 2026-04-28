@@ -1515,6 +1515,13 @@ legend {
         background-size: cover;
     }
 
+    #contacthero{
+    background: linear-gradient(rgba(30, 75, 124, 0.40), rgba(30, 75, 124, 0.40)),
+    url(images/insurancewomandesktop.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    }
+
 
 
     /* FEATURED SECTION ON INDEX PAGE */
@@ -1706,9 +1713,18 @@ legend {
 
     .formexterior {
         padding: 60px 20px;
+    }
+
+    #quoteformexterior{
         background:
             linear-gradient(rgba(233, 243, 255, 0.6), rgba(233, 243, 255, 0.6)),
             url(images/tools.jpg) center / cover no-repeat;
+    }
+
+    #contactusformexterior{
+        background:
+            linear-gradient(rgba(233, 243, 255, 0.6), rgba(233, 243, 255, 0.6)),
+            url(images/constructionman.jpg) center / cover no-repeat;
     }
 
     #quotehero{
@@ -1724,6 +1740,23 @@ legend {
 
     #quotehero p{
         max-width: 800px;
+    }
+
+    .contactusforms{
+        padding: 20px;
+        position: relative;
+    }
+
+    .contact-form{
+        margin: 0
+    }
+
+    .contact-details-card{
+        margin: 20px 20px 20px auto;
+    }
+
+    .contact-details-card{
+        max-width: 500px;
     }
 
 }
